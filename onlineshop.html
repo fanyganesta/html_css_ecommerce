@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CREACION Online Shop</title>
+	<link rel="stylesheet" type="text/css" href="Onlineshop.css">
+</head>
+<body>
+
+
+
+	<!--container start-->
+
+	<div class="container cf">
+		
+		<!-- header start-->
+
+		<div class="header">
+			<div class="mainheader cf">
+				<div class="logo cf">
+				</div>
+				<div class="search">
+					<form action="#" method="GET">
+						<select class="select1">
+							<option value="">Pilih Kategori..</option>
+							<option value="">Kategori 1</option>
+							<option value="">Kategori 2</option>
+							<option value="">Kategori 3</option>
+						</select>
+						<input class="search1" type="search" name="search" placeholder="Cari Produk..">
+						<input class="submit1" type="submit" name="submitsearch" value="SEARCH">
+					</form>
+				</div>
+				<div class="keranjangheader cf">
+					<table>
+						<tr>
+							<th colspan="2">Keranjang Belanja Anda</th>
+						</tr>
+						<tr>
+							<td>Barang : 0 </td>
+							<td>Rp. : 0</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div class="navigasi cf">
+				<ul>
+					<li id="navhome"><a href="#">HOME</a></li>
+					<li><a href="#">AKUN SAYA</a></li>
+					<li><a href="#">CHECKOUT</a></li>
+					<li><a href="#">KERANJANG BELANJA</a></li>
+					<li><a href="#">TOKO</a></li>
+					<li id="navcontact"><a href="#">CONTACK</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!--header end-->
+
+		<!--content start-->
+
+		<div class="content cf">
+
+			<!--main content start-->
+
+			<div class="maincontent cf">
+
+				<!--image slider-->
+				<div class="slider">
+					<div class="slides">
+						<!--radio button start-->
+						<input type="radio" name="radiobtn" id="radio1">
+						<input type="radio" name="radiobtn" id="radio2">
+						<input type="radio" name="radiobtn" id="radio3">
+						<input type="radio" name="radiobtn" id="radio4">
+						<!--radio button end-->
+
+						<!--image start-->
+						<div class="slide">
+							<img src="assets/images/slider/1.png" alt="gambar1">
+						</div>
+						<div>
+							<img src="assets/images/slider/2.png" alt="gambar2">
+						</div>
+						<div>
+							<img src="assets/images/slider/3.png" alt="gambar3">
+						</div>
+						<div>
+							<img src="assets/images/slider/4.png">
+						</div>
+						<!--image end-->
+
+						<!--automatic image slide start-->
+						<div class="autoslide">
+							<div class="autobtn1">
+							</div>
+							<div class="autobtn2">
+							</div>
+							<div class="autobtn3">
+							</div>
+							<div class="autobtn4">
+							</div>
+						</div>
+						<!--automatic image slide end-->
+					</div>
+
+				</div>
+
+
+					<!--manual image slider-->
+					
+					<div class="manualslide">
+						<label for="radio1" class="manualbtn"></label>
+						<label for="radio2" class="manualbtn"></label>
+						<label for="radio3" class="manualbtn"></label>
+						<label for="radio4" class="manualbtn"></label>
+					</div>
+
+					<!--manual image slider-->
+
+					<script type="text/javascript">
+						var counter = 2;
+						setInterval(function(){
+							document.getElementById('radio' + counter).checked = true;
+							counter++;
+							if(counter > 4){
+								counter = 1;
+							}
+						}, 5000);
+					</script>
+
+
+
+						<!--tart content start-->
+
+						<div class="tart">
+
+							<input type="radio" name="radiobtntart" id="radiotart1">
+							<input type="radio" name="radiobtntart" id="radiotart2">
+
+							<div class="tartheader">
+							<h3>Tart</h3>
+								<label for="radiotart1" class="manualtartbtn1">></label>
+								<label for="radiotart2" class="manualtartbtn2"><</label>
+							</div>
+
+							<!--produk tart start-->
+							<div class="tartslide">
+									<div class="produktart">
+										<div class="imgtart">
+											<img src="assets/images/content/tart/1.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul> 
+									</div>
+									<div class="produktart">
+										<div class="imgtart">
+											<img src="assets/images/content/tart/2.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produktart">
+										<div class="imgtart">
+											<img src="assets/images/content/tart/3.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produktart">
+										<div class="imgtart">
+											<img src="assets/images/content/tart/4.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produktart">
+										<div class="imgtart">
+											<img src="assets/images/content/tart/5.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produktart">
+										<div class="imgtart">
+											<img src="assets/images/content/tart/6.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produktart">
+										<div class="imgtart">
+											<img src="assets/images/content/tart/7.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produktart">
+										<div class="imgtart">
+											<img src="assets/images/content/tart/8.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+
+							</div>
+							<!--produk tart end-->
+						
+						</div>
+						<!--tart content end-->
+
+						<!--muffin content start-->
+
+						<div class="muffin">
+
+							<input type="radio" name="radiobtnmuffin" id="radiomuffin1">
+							<input type="radio" name="radiobtnmuffin" id="radiomuffin2">
+
+							<div class="muffinheader">
+							<h3>Muffin</h3>
+								<label for="radiomuffin1" class="manualmuffinbtn1">></label>
+								<label for="radiomuffin2" class="manualmuffinbtn2"><</label>
+							</div>
+
+							<!--produk tart start-->
+							<div class="muffinslide">
+									<div class="produkmuffin">
+										<div class="imgmuffin">
+											<img src="assets/images/content/muffin/1.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul> 
+									</div>
+									<div class="produkmuffin">
+										<div class="imgmuffin">
+											<img src="assets/images/content/muffin/2.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produkmuffin">
+										<div class="imgmuffin">
+											<img src="assets/images/content/muffin/3.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produkmuffin">
+										<div class="imgmuffin">
+											<img src="assets/images/content/muffin/4.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produkmuffin">
+										<div class="imgmuffin">
+											<img src="assets/images/content/muffin/5.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produkmuffin">
+										<div class="imgmuffin">
+											<img src="assets/images/content/muffin/6.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produkmuffin">
+										<div class="imgmuffin">
+											<img src="assets/images/content/muffin/7.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produkmuffin">
+										<div class="imgmuffin">
+											<img src="assets/images/content/muffin/8.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+
+							</div>
+							<!--produk muffin end-->
+						
+						</div>
+						<!--muffin content end-->
+
+
+						<!--tiramisu content start-->
+
+						<div class="tiramisu">
+
+							<input type="radio" name="radiobtntiramisu" id="radiotiramisu1">
+							<input type="radio" name="radiobtntiramisu" id="radiotiramisu2">
+
+							<div class="tiramisuheader">
+							<h3>Produk Baru</h3>
+								<label for="radiotiramisu1" class="manualtiramisubtn1">></label>
+								<label for="radiotiramisu2" class="manualtiramisubtn2"><</label>
+							</div>
+
+							<!--produk tart start-->
+							<div class="tiramisuslide">
+									<div class="produktiramisu">
+										<div class="imgtiramisu">
+											<img src="assets/images/content/tiramisu/1.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul> 
+									</div>
+									<div class="produktiramisu">
+										<div class="imgtiramisu">
+											<img src="assets/images/content/tiramisu/2.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produktiramisu">
+										<div class="imgtiramisu">
+											<img src="assets/images/content/tart/1.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produktiramisu">
+										<div class="imgtiramisu">
+											<img src="assets/images/content/tart/2.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produktiramisu">
+										<div class="imgtiramisu">
+											<img src="assets/images/content/muffin/1.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produktiramisu">
+										<div class="imgtiramisu">
+											<img src="assets/images/content/muffin/2.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produktiramisu">
+										<div class="imgtiramisu">
+											<img src="assets/images/content/tiramisu/7.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+									<div class="produktiramisu">
+										<div class="imgtiramisu">
+											<img src="assets/images/content/tiramisu/8.png">
+										</div>
+										<h5>Ini Adalah Nama Produk</h5>
+										<h6>Harga Coret</h6>
+										<h4>Harga Produk</h4>
+										<ul>
+											<li><a href="#">ADD TO CART</a></li>
+											<li><a href="#" id="detailbtn">DETAIL</a></li>
+										</ul>
+									</div>
+
+							</div>
+							<!--produk tiramisu end-->
+						
+						</div>
+						<!--tiramisu content end-->
+
+
+						<!--Navigasi page start-->
+
+						<div class="navpage cf">
+							<ul>
+								<!-- <li><a href="#"><</a></li> -->
+								<li id="bgnavpage"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">></a></li>
+							</ul>
+						</div>
+
+						<!--Navigasi page end-->
+
+
+						<!--NEWS Start-->
+
+						<div class="news">
+						
+							<div class="newscontent">
+								<img src="assets/images/content/tiramisu/4.png" alt="ini gambar">
+								<div class="newsitem">
+									<h4>Ini Judul Dari Berita</h4>
+									<h2>Ini Tanggal Dari Postingan</h2>
+									<p>Ini Adalah Isi Dari Berita Yang Ada</p>
+								</div>
+							</div>
+
+							<div class="newscontent">
+								<img src="assets/images/content/tiramisu/5.png" alt="ini gambar">
+								<div class="newsitem">
+									<h4>Ini Judul Dari Berita</h4>
+									<h2>Ini Tanggal Dari Postingan</h2>
+									<p>Ini Adalah Isi Dari Berita Yang Ada</p>
+								</div>
+							</div>
+
+							<div class="newscontent">
+								<img src="assets/images/content/tiramisu/6.png" alt="ini gambar">
+								<div class="newsitem">
+										<h4>Ini Judul Dari Berita</h4>
+										<h2>Ini Tanggal Dari Postingan</h2>
+										<p>Ini adalah Isi Dari Berita Yang Ada</p>
+								</div>
+
+							</div>
+
+						</div>
+
+						<!--NEWS End-->
+
+			</div>
+
+			<!--main content end-->
+
+
+			<!--side bar start-->
+
+			<div class="sidebar">
+				<div class="kategori">
+					<table>
+						<tr>
+							<th>KATEGORI PRODUK</th>
+						</tr>
+						<tr>
+							<td>Tart</td>
+						</tr>
+						<tr>
+							<td>Tiramisu</td>
+						</tr>
+						<tr>
+							<td>Muffin</td>
+						</tr>
+						<tr>
+							<td id="select2">
+								<select>
+									<option value="">Pilih Kategori..</option>
+									<option value="">Tart</option>
+									<option value="">Tiramisu</option>
+									<option value="">Muffin</option>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="menu">
+					<table>
+						<tr>
+							<th>MENU</th>
+						</tr>
+						<tr>
+							<td>Pembayaran</td>
+						</tr>
+						<tr>
+							<td>Pengiriman</td>
+						</tr>
+						<tr>
+							<td>Pengembalian</td>
+						</tr>
+						<tr>
+							<td>Cara Berbelanja</td>
+						</tr>
+					</table>
+				</div>
+
+
+				<!--Produk Baru start-->
+
+
+				<div class="produkdiskon">
+					<table>
+						<tr>
+							<th>PRODUK DISKON</th>
+						</tr>
+						<tr>
+							<td>
+								<!-- <div class="itemprodukdiskon"> -->
+									<div class="itemprodukdiskon">
+										<div>
+											<img src="assets/images/content/tart/1.png">
+										</div>
+										<div>
+											<h4>Ini Nama Produk Diskon</h4>
+											<h6>Harga Coret</h6>
+											<h3>Ini Harga</h3> 
+										</div>
+									</div>
+									<div class="itemprodukdiskon">
+										<div>
+											<img src="assets/images/content/muffin/1.png">
+										</div>
+										<div>
+											<h4>Ini Nama Produk Diskon</h4>
+											<h6>Harga Coret</h6>
+											<h3>Ini Harga</h3>
+										</div>
+									</div>
+									<div class="itemprodukdiskon">
+										<div>
+											<img src="assets/images/content/tiramisu/4.png">
+										</div>
+										<div>
+											<h4>Ini Nama Produk Diskon</h4>
+											<h6>Harga Coret</h6>
+											<h3>Ini Harga</h3>
+										</div>
+									</div>
+									<div class="itemprodukdiskon">
+										<div>
+											<img src="assets/images/content/tiramisu/5.png">
+										</div>
+										<div>
+											<h4>Ini Nama Produk Diskon</h4>
+											<h6>Harga Coret</h6>
+											<h3>Ini Harga</h3>
+										</div>
+									</div>
+									<div class="itemprodukdiskon">
+										<div>
+											<img src="assets/images/content/tiramisu/6.png">
+										</div>
+										<div>
+											<h4>Ini Nama Produk Diskon</h4>
+											<h6>Harga Coret</h6>
+											<h3>Ini Harga</h3>
+										</div>
+									</div>
+								<!-- </div> -->
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<!--Produk Baru End-->
+
+
+				<!--Produk Baru start-->
+
+
+				<div class="topproduk">
+					<table>
+						<tr>
+							<th>PRODUK DISKON</th>
+						</tr>
+						<tr>
+							<td>
+								<!-- <div class="itemprodukdiskon"> -->
+									<div class="itemtopproduk">
+										<div>
+											<img src="assets/images/content/tart/2.png">
+										</div>
+										<div>
+											<h4>Ini Nama Top Produk</h4>
+											<h6>Harga Coret</h6>
+											<h3>Ini Harga</h3> 
+										</div>
+									</div>
+									<div class="itemtopproduk">
+										<div>
+											<img src="assets/images/content/muffin/2.png">
+										</div>
+										<div>
+											<h4>Ini Nama Top Produk</h4>
+											<h6>Harga Coret</h6>
+											<h3>Ini Harga</h3>
+										</div>
+									</div>
+									<div class="itemtopproduk">
+										<div>
+											<img src="assets/images/content/tiramisu/3.png">
+										</div>
+										<div>
+											<h4>Ini Nama Top Produk</h4>
+											<h6>Harga Coret</h6>
+											<h3>Ini Harga</h3>
+										</div>
+									</div>
+									<div class="itemtopproduk">
+										<div>
+											<img src="assets/images/content/tiramisu/1.png">
+										</div>
+										<div>
+											<h4>Ini Nama Top Produk</h4>
+											<h6>Harga Coret</h6>
+											<h3>Ini Harga</h3>
+										</div>
+									</div>
+									<div class="itemtopproduk">
+										<div>
+											<img src="assets/images/content/tiramisu/4.png">
+										</div>
+										<div>
+											<h4>Ini Nama Top Produk</h4>
+											<h6>Harga Coret</h6>
+											<h3>Ini Harga</h3>
+										</div>
+									</div>
+								<!-- </div> -->
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<!--Produk Baru End-->
+
+			</div>
+
+			<!--side bar end-->
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<!--content end-->
+
+			<!--footer start-->
+				<div class="footer">
+
+					<div class="bantuan">
+						<h3>Bantuan</h3>
+						<ul>
+							<li><a href="#">Pembayaran</a></li>
+							<li><a href="#">Pengiriman Barang</a></li>
+							<li><a href="#">Pengembalian Barang</a></li>
+							<li><a href="#">Cara Pembelian</a></li>
+						</ul>
+
+					</div>
+					<div class="costumercare">
+						<h3>Costumer Care</h3>
+						<ul>
+							<li>Buka 24 jam</li>
+							<li><img src="assets/images/logo/telepon.png">0987 098789</li>
+							<li><img src="assets/images/logo/hp.png">0989 9878 6543</li>
+							<li><img src="assets/images/logo/email.png">crookies@gmail.com</li>
+						</ul>
+					
+					</div>
+					<div class="infotoko">
+						<h3>Info Toko</h3>
+						<ul>
+							<li><a href="#">Tentang Kami</a></li>
+							<li><a href="#">Kabar Terbaru</a></li>
+							<li><a href="#">Blog Cooperative</a></li>
+						</ul>
+
+					</div>
+					<div class="followus">
+						<h3>Follow Us</h3>
+						<p> Ikuti kami di Social Media. Jangan lewatkan penawaran menarik dari kami</p>
+						<div class="followusimg">
+							<img src="assets/images/logo/fb.png">
+							<img src="assets/images/logo/twitter.png">
+							<img src="assets/images/logo/ig.png">
+							<img src="assets/images/logo/youtube.png">
+						</div>
+					</div>
+			</div>
+
+			<!--footer end-->
+
+
+	</div>
+
+	<!--container end-->
+
+
+
+</body>
+</html>
